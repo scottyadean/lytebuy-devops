@@ -1,0 +1,26 @@
+# OpenTofu / Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Commit the lock file for reproducible provider versions.
+!.terraform.lock.hcl
+
+# Local secret staging - pushed to SSM by scripts/put-secrets.sh, never committed.
+secrets/*.env
+!secrets/*.env.example
+
+# Editor / OS
+.DS_Store
+
+# RDS master password, saved by scripts/bringup.sh so a re-run does not need it
+# re-typed. Plaintext - never commit.
+.db-password
+.db-password-*

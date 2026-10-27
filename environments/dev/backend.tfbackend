@@ -1,0 +1,5 @@
+bucket         = "lytebuy-tofu-state-329104270934-us-west-2"
+key            = "backend/dev.tfstate"
+region         = "us-west-2"
+dynamodb_table = "lytebuy-tofu-locks"
+encrypt        = true

@@ -1,0 +1,14 @@
+{
+  "name": "lytebuy-media-resize",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generate WebP variants of product media on first request (lb-28).",
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "sharp": "0.33.5"
+  },
+  "scripts": {
+    "test": "node --test __tests__/resize.test.js"
+  }
+}
